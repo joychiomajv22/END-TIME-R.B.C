@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #ffffff;
+  color: #0a0a0a;
+}
+
+/* HERO */
+.live-hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: radial-gradient(circle, #1a1a1a, #000000);
+  color: #ffffff;
+  position: relative;
+}
+
+.live-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  background: red;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+  animation: pulse 1.5s infinite;
+}
+
+.live-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+/* STREAM SECTION */
+.live-stream {
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+.stream-box iframe {
+  width: 100%;
+  height: 260px;
+  border-radius: 18px;
+  border: none;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.stream-info h2 {
+  margin-bottom: 10px;
+}
+
+.stream-actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.stream-btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.stream-btn.youtube {
+  background: #cc0000;
+}
+
+.stream-btn.zoom {
+  background: #2d8cff;
+}
+
+/* SERVICE TIMES */
+.service-times {
+  padding: 90px 8%;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.times-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.time-card {
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* CTA */
+.live-cta {
+  padding: 90px 20px;
+  text-align: center;
+  background: #fff4e6;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 40px;
+  background: #000;
+  color: #fff;
+  border-radius: 35px;
+  text-decoration: none;
+}
+
+/* ANIMATIONS */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.85; }
+  100% { transform: scale(1); opacity: 1; }
+}
